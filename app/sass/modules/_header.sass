@@ -1,0 +1,347 @@
+.adaptiveMenu
+	nav
+		background-color: white
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25)
+
+		//верхняя часть меню
+		.navTop
+			border-bottom: 2px solid rgb(30, 157, 66)
+			height: 50px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding: 0 20px
+
+			.block.second
+				justify-content: flex-end
+				flex-grow: 1
+				a
+					margin-left: 55px
+				a.dollar
+					margin-left: 30px
+					color: #dc1010
+					font-family: 'RobotoBold'
+					text-decoration: none
+				a.euro
+					margin-left: 10px
+					color: #b8c80a
+					font-family: 'RobotoBold'
+					text-decoration: none
+				.date
+					color: #259e42
+					font-family: 'RobotoBold'
+					position: relative
+					text-decoration: none
+					&:focus
+						text-decoration: none
+					&:before
+						content: ""
+						display: block
+						top: 0
+						left: -32px
+						position: absolute
+						background: url("../images/dateImg.png") no-repeat
+						height: 23px
+						width: 23px
+				.weather
+					color: #259e42
+					font-family: 'RobotoBold'
+					position: relative
+					text-decoration: none
+					margin-left: 70px
+					&:focus
+						text-decoration: none
+					&:before
+						content: ""
+						display: block
+						top: 0
+						left: -32px
+						position: absolute
+						background: url("../images/weather.png") no-repeat
+						height: 23px
+						width: 23px
+				.year
+					height: 25px
+					width: 25px
+					border-radius: 50%
+					overflow: hidden
+					background: url("../images/year.png") no-repeat
+					margin-left: 20px
+
+			.block
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				flex-grow: 1
+					
+			.navbar-brand
+				padding: 0
+				float: initial
+				height: auto
+			.social
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				width: 80px
+				justify-content: space-between
+				margin-left: 38px
+				.ic
+					a
+						background: url("../images/socialSprite.png") no-repeat
+						width: 15px
+						height: 15px
+						display: block
+						
+					&:nth-of-type(1)
+						a
+							background-position: 0 0
+							&:hover
+								background-position: -2px -17px
+					&:nth-of-type(2)
+						a
+							background-position: -25px 0
+							&:hover
+								background-position: -25px -17px
+					&:nth-of-type(3)
+						a
+							background-position: -50px 0
+							&:hover
+								background-position: -50px -17px
+
+		//нижняя часть меню
+		.flexBlock
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			width: 100%
+			justify-content: space-between
+			padding: 0 20px
+			position: relative
+
+			//первый уровень
+			ul.firstStep
+				display: flex
+				justify-content: space-around
+				width: 80%
+				li
+					&:first-child a
+						margin-left: 0
+					&:before
+						width: 0
+						margin-right: 0
+				a
+					display: inline-block
+					margin: 15px 15px
+					text-decoration: none
+					color: black
+					font-family: 'RalewayMedium'
+					color: #818181
+
+				//второй уровень
+				.dropdown-menu
+					width: 100%
+					background-color: rgb(35, 31, 32)
+					border-radius: 0
+					margin: 0
+					height: 440px
+					padding: 0
+					overflow: hidden
+					& > li
+						max-width: 298px
+						& > a
+							color: white
+							margin: auto
+							padding: 14px 23px
+							font-family: 'RalewayMedium'
+							transition: none
+							&:hover
+								color: #1e9d42
+								border-left: 4px solid rgb(30, 157, 66)
+								background-color: rgb(239, 241, 241)
+
+					//третий уровень
+					li.second
+						.dropdown-menu
+							background-color: rgb(239, 241, 241)
+							top: -1px
+							right: -1px
+							width: 79%
+							left: initial
+							
+							box-shadow: none
+							border: none
+							li
+								a
+									color: black
+									&:hover
+										border: none
+							.flexBlock
+								padding: 0
+
+								.wrap
+									display: -webkit-flex
+									display: -moz-flex
+									display: -ms-flex
+									display: -o-flex
+									display: flex
+									height: 438px
+								
+									//vertical item
+									&:nth-of-type(1)
+										display: -webkit-flex
+										display: -moz-flex
+										display: -ms-flex
+										display: -o-flex
+										display: flex
+										flex-grow: 1
+										align-self: stretch
+										justify-content: center
+										.item
+											display: -webkit-flex
+											display: -moz-flex
+											display: -ms-flex
+											display: -o-flex
+											display: flex
+											flex-direction: column
+											background: black
+											max-width: 270px
+											max-height: 400px
+											width: 100%
+											height: 100%
+											border-radius: 5px
+											background: white
+											overflow: hidden
+											
+											.top
+												width: 100%
+												.img
+													height: 190px
+													width: 100%
+													background: black
+
+											.bottom
+												padding: 23px 17px 25px
+										
+									//horizontal item
+									&:nth-of-type(2)
+										display: -webkit-flex
+										display: -moz-flex
+										display: -ms-flex
+										display: -o-flex
+										display: flex
+										flex-direction: column
+										flex-grow: 2
+										justify-content: space-around
+										.item
+											display: -webkit-flex
+											display: -moz-flex
+											display: -ms-flex
+											display: -o-flex
+											display: flex
+											flex-direction: row
+											background: black
+											max-width: 558px
+											max-height: 182px
+											width: 100%
+											height: 100%
+											border-radius: 5px
+											background: white
+											overflow: hidden
+											
+											.top
+												width: 100%
+												max-width: 273px
+												width: 100%
+												.img
+													height: 182px
+											
+													background: black
+
+											.bottom
+												padding: 23px 17px 25px
+										
+
+			//иконки
+			.wrap
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				align-items: center
+				ul
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					flex-direction: row
+					li
+						border-radius: 50%
+						margin-left: 18px
+						&:before
+							display: none
+						.ic
+							width: 25px
+							height: 25px
+							a
+								width: 25px
+								height: 25px
+								display: block
+						&:nth-of-type(1)
+							a
+								background: url("../images/searchIc.png") no-repeat
+
+						&:nth-of-type(2)
+							a
+								background: url("../images/peopleIc.png") no-repeat
+
+						&:nth-of-type(3)
+							a
+								background: url("../images/penIc.png") no-repeat
+
+		//кнопка мобильного меню						
+		.menuTrigger
+			display: none
+
+
+
+			
+li.second:hover ul.firstStep
+	border: 5px solid red
+
+@media screen and (max-width: 992px)
+	.adaptiveMenu nav
+		position: relative
+		.logo
+			width: 40%
+		.menuTrigger
+			position: absolute
+			left: 0
+		ul.firstStep
+			flex-direction: row
+			position: absolute
+			top: 100%
+			left: 0
+			width: 100%
+			justify-content: space-between
+		ul.firstStep > li:first-child a
+			margin-left: 0
+		ul.firstStep > li:last-child a
+			margin-right: 0
+			li
+				display: none
+		.menuTrigger
+			display: block

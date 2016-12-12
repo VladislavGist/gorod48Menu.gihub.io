@@ -1,0 +1,127 @@
+header
+	.container
+		.adaptiveMenu
+			.container
+				nav
+					.navTop
+						.block
+							a(href="/" class="navbar-brand")
+								img(src="../images/logo.png", alt="img")
+
+							.social
+								.ic
+									a(href="/")
+								.ic
+									a(href="/")
+								.ic
+									a(href="/")
+						.block.second
+							a.date Вт. 28 июня 2016 г.
+							a.weather +16
+							a.dollar $ 64.7
+							a.euro € 71.64
+							.year
+
+					//Нижняя часть меню
+					.flexBlock
+
+						//первый уровень
+						ul.firstStep
+							li
+								a(href="/" data-toggle="dropdown").dropdown-toggle Новости
+								ul.dropdown-menu
+									li
+										a(href="") Второй уровень новости
+									li
+										a(href="") Второй уровень новости
+									li
+										a(href="") Второй уровень новости
+									li
+										a(href="") Второй уровень новости
+									li
+										a(href="") Второй уровень новости
+							li
+								a(href="")
+									img(src="upload/rsppIc.png", alt="img")
+							li
+								a(href="") Объявления
+
+								//второй уровень
+								ul.dropdown-menu
+									li
+										a(href="") Второй уровень объявления
+
+									li.second
+										a(href="/" data-toggle="dropdown").dropdown-toggle Второй уровень объявления
+
+										//третий уровень
+										.dropdown-menu
+											.flexBlock
+												.wrap
+													.item
+														.top
+															.img
+																img(src="", alt="img")
+
+														.bottom
+															p text
+												.wrap
+													.item
+														.top
+															.img
+																img(src="", alt="img")
+
+														.bottom
+															p text
+															
+													.item
+														.top
+															.img
+																img(src="", alt="img")
+
+														.bottom
+															p text
+									li
+										a(href="") Второй уровень объявления
+									li
+										a(href="") Второй уровень объявления
+									li
+										a(href="") Второй уровень объявления
+							li
+								a(href="") Справочник
+								ul.dropdown-menu
+									li
+										a(href="") Второй уровень справочник
+									li
+										a(href="") Второй уровень справочник
+									li
+										a(href="") Второй уровень справочник
+									li
+										a(href="") Второй уровень справочник
+									li
+										a(href="") Второй уровень справочник
+							li
+								a(href="") Афиша
+							li
+								a(href="") Выходной маршрут
+							li
+								a(href="") Topnews
+							li
+								a(href="") Бизнес
+							li
+								a(href="") Ещё
+
+						//иконки
+						.wrap
+							ul
+								li
+									.ic
+										a(href="/")
+								li
+									.ic
+										a(href="/")
+								li
+									.ic
+										a(href="/")
+
+					a(href="/").menuTrigger Menu

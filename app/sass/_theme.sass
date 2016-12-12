@@ -1,0 +1,61 @@
+.wrapper
+	position: relative
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	height: 100%
+
+.allContent
+	flex: 1 0 auto
+
+.transition
+	transition: all .3s ease
+
+.modal-open
+  padding-right: 0 !important
+  overflow: visible
+
+
+#app
+	margin-top: 50px
+
+.notesApp
+	textarea
+		resize: none
+		width: 100%
+		border: 1px solid silver
+		border-radius: 5px
+		padding: 10px
+		margin-bottom: 20px
+	.btnAdd
+		display: block
+		margin: 0 auto 20px
+		padding: 15px 25px
+		border-radius: 5px
+		border: 1px solid silver
+	.notesGrid	
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		color: silver
+		.note
+			width: 280px
+			padding: 10px
+			border: 1px solid silver
+			border-radius: 5px
+			text-align: center
+			color: silver
+			position: relative
+			margin-bottom: 5px
+			button
+				position: absolute
+				top: 5px
+				right: 9px
+				background: transparent
